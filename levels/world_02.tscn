@@ -165,3 +165,16 @@ layer_1/tile_data = PackedInt32Array(393230, 65537, 1, 458766, 65537, 2, 524302,
 
 [node name="player" parent="." unique_id=519492928 instance=ExtResource("3_qasef")]
 position = Vector2(18, 169)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1700526855]
+
+[node name="label_vidas" type="Label" parent="CanvasLayer" unique_id=1803871623]
+offset_left = 3.0
+offset_right = 43.0
+offset_bottom = 23.0
+
+[node name="label_tempo" type="Label" parent="CanvasLayer" unique_id=550067816]
+offset_left = 4.0
+offset_top = 25.0
+offset_right = 44.0
+offset_bottom = 48.0
