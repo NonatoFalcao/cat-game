@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cut14ax1fprmm"]
+
+[ext_resource type="Script" uid="uid://bneery7unrq4g" path="res://game_over.gd" id="1_y26ei"]
+
+[node name="Control" type="Control" unique_id=808269941]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y26ei")
+
+[node name="GAME OVER" type="Label" parent="." unique_id=400103266]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 26.0
+offset_right = 256.0
+offset_bottom = 49.0
+text = "GAME OVER"
+
+[node name="Reiniciar" type="Button" parent="." unique_id=1337050994]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 60.0
+offset_right = 241.0
+offset_bottom = 104.0
+text = "reiniciar"
+
+[connection signal="pressed" from="Reiniciar" to="." method="_on_reiniciar_pressed"]
