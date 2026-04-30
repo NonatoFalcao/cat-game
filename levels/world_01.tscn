@@ -190,6 +190,14 @@ offset_bottom = 23.0
 
 [node name="label_tempo" type="Label" parent="CanvasLayer" unique_id=1533726695]
 offset_left = 4.0
-offset_top = 25.0
+offset_top = 16.0
 offset_right = 44.0
-offset_bottom = 48.0
+offset_bottom = 39.0
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=290300163]
+offset_left = 2.0
+offset_top = 45.0
+offset_right = 244.0
+offset_bottom = 94.0
+text = "Seta < e > ou A ou D para andar
+barra de espaço para pular"
