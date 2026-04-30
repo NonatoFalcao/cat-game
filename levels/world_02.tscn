@@ -171,6 +171,13 @@ offset_bottom = 48.0
 text = "aperte seta para baixo
 para diminuir de tamanho"
 
+[node name="Label2" type="Label" parent="level" unique_id=293720672]
+offset_left = 1373.0
+offset_top = 241.0
+offset_right = 1436.0
+offset_bottom = 264.0
+text = "VITORIA"
+
 [node name="player" parent="." unique_id=519492928 instance=ExtResource("3_qasef")]
 position = Vector2(18, 169)
 
