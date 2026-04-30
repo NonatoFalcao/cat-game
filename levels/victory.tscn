@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://biijncc5xe7fl"]
+
+[node name="Victory" type="Node2D" unique_id=1320332977]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=835061693]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1600335051]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=535448365]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1112.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="CanvasLayer/Control" unique_id=1633783682]
+position = Vector2(550, 633)
+amount = 180
+lifetime = 12.7
+spread = 180.0
+gravity = Vector2(0, -300)
+initial_velocity_min = 154.55
+initial_velocity_max = 154.55
+
+[node name="Label" type="Label" parent="CanvasLayer/Control" unique_id=98445854]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 290.0
+offset_right = 534.0
+offset_bottom = 313.0
+scale = Vector2(2.355, 2.355)
+theme_override_colors/font_color = Color(0.6684018, 0.99999994, 0.50195295, 1)
+text = "VITÓRIA"

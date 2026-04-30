@@ -21,8 +21,6 @@ Global="*uid://bfsnbog0i22fq"
 
 [display]
 
-window/size/viewport_width=1500
-window/size/viewport_height=300
 window/size/transparent=true
 window/stretch/mode="viewport"
 

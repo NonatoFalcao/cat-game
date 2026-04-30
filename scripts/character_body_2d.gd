@@ -49,7 +49,11 @@ func _physics_process(delta: float) -> void:
 		$anim.play("idle")
 
 	if position.x > 1400:
-		get_tree().change_scene_to_file("res://levels/world_02.tscn")
+		var cena_atual = get_tree().current_scene.scene_file_path
+		if cena_atual == "res://levels/world_01.tscn":
+			get_tree().change_scene_to_file("res://levels/world_02.tscn")
+		elif cena_atual == "res://levels/world_02.tscn":
+			get_tree().change_scene_to_file("res://levels/victory.tscn")
 
 	if position.y > 350 and not morreu:
 		is_rolling = true
@@ -65,6 +69,15 @@ func _physics_process(delta: float) -> void:
 		label_tempo.text = "Tempo: " + str(int(Global.tempo))
 
 	move_and_slide()
+	apply_push_force()
+	
+func apply_push_force():
+	for objects in get_slide_collision_count():
+		var collision = get_slide_collision(objects)
+		if collision.get_collider() is Pushables:
+			collision.get_collider().empurrar(-collision.get_normal())
+			
+	
 
 func perder_vida():
 	Global.vidas -= 1
@@ -80,4 +93,6 @@ func game_over():
 	Global.vidas = 3
 	Global.tempo = 60.0
 	get_tree().change_scene_to_file("res://game_over.tscn")
+	
+
 	
